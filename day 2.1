@@ -1,0 +1,52 @@
+DIFFERENCE BETWEEN DOCUMENT AND WINDOW OBJECTS:
+DOCUMENT OBJECTS:
+
+                JavaScript Document object is an object that provides access to all HTML elements of a document. When an HTML document is loaded into a browser window, then it becomes a document object.
+
+The document object stores the elements of an HTML document, such as HTML, HEAD, BODY, and other HTML tags as objects.
+
+A document object is a child object of the Window object, which refers to the browser.You can access a document object either using window.document property or using object directly.
+
+
+ syntax:  document.method_name; for getting the methods.
+
+ some property of document object:cookie,domain,lastmodified,documentmode.
+
+
+script>
+		    
+			document.write(document.domain +"<br>")
+			document.write(document.lastModified +"<br>")
+			document.write(document.documentMode +"<br>")
+			document.write(document.title +"<br>")
+			document.write(document.url +"<br>")
+
+		</script>
+
+
+
+ WINDOW OBJECTS:
+
+                  avaScript Window is a global Interface (object type) which is used to control the browser window lifecycle and perform various operations on it.
+
+A global variable window, which represents the current browser window in which the code is running, is available in our JavaScript code and can be directly accessed by using window literal.
+
+It represents a window containing a webpage which in turn is represented by the document object. A window can be a new window, a new tab, a frame set or individual frame created with JavaScript.
+
+Syntax:  window.property_name; for getting different property.
+
+some window object methods:alert(),blur(),clearinterval(),close(),confirm(),focus(),open()
+ 
+
+ <script>
+        var win;
+        // Open window
+        function createWindow() {
+          win = window.open("", "My Window", "width=500, height=200");
+        }
+        
+        // Close window
+        function closewin(){
+            win.close();
+        }
+        </script>
